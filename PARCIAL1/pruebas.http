@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:3000
+
+### Consultar todos los turnos
+GET {{baseUrl}}/api/turnos
+
+### Consultar un turno existente
+GET {{baseUrl}}/api/turnos/1
+
+### Consultar un turno inexistente
+GET {{baseUrl}}/api/turnos/99
+
+### Contar turnos por profesional y guardar el resultado
+GET {{baseUrl}}/contar-turnos-por-profesional

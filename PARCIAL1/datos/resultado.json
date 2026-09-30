@@ -1,0 +1,8 @@
+{
+  "proceso": "Conteo de turnos por profesional",
+  "totalProcesados": 4,
+  "resultado": {
+    "Agustina": 2,
+    "Rocio": 2
+  }
+}

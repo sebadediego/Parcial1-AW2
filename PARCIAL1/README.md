@@ -1,21 +1,50 @@
-# AW2 - Parcial 1
+# Parcial 1 - Aplicaciones Web 2
 
-Sebastian De Diego - Comisión MB
+Alumno: Sebastian De Diego  
+Comisión: MB
 
-## Temática
+## Descripción
 
-Gestión de turnos de Kinesio Saludd.
+Backend de consulta de turnos de un consultorio de kinesiología,
+desarrollado con Node.js, Express y módulos ES.
 
-## Desarrollo previsto
+Los turnos se leen desde datos/turnos.json en cada solicitud.
 
-- GET /api/turnos: consultar todos los turnos.
-- GET /api/turnos/:id: consultar un turno por ID.
-- GET /contar-turnos-por-profesional: procesar los turnos y devolver el conteo por profesional.
-- Leer los turnos desde un archivo JSON en cada petición.
-- Guardar el resultado del procedimiento mediante un middleware propio.
-- Separar las funcionalidades en módulos ES con archivos .mjs.
-- Gestionar errores con try/catch e incluir pruebas en formato REST Client.
+## Ejecución
 
-## Estado
+Desde la carpeta PARCIAL1, instalar las dependencias:
 
-Carpeta inicial. Implementación pendiente.
+```bash
+pnpm install
+```
+
+Iniciar el servidor:
+
+```bash
+node index.mjs
+```
+
+El servidor utiliza el puerto 3000.
+
+## Rutas
+
+- GET /api/turnos: devuelve todos los turnos.
+- GET /api/turnos/:id: devuelve el turno correspondiente al ID.
+- GET /contar-turnos-por-profesional: cuenta los turnos de Agustina
+  y Rocio y devuelve el resultado.
+
+Si el turno no existe, devuelve el estado 404.
+Los errores de lectura, procesamiento o escritura devuelven el estado 500.
+
+## Middleware
+
+El middleware guarda el resultado del conteo en datos/resultado.json
+antes de enviar la respuesta. El archivo se actualiza en cada ejecución
+del procedimiento.
+
+## Pruebas
+
+El archivo pruebas.http contiene las consultas para ejecutar
+con la extensión REST Client de VS Code.
+
+Los datos de los pacientes son ficticios.

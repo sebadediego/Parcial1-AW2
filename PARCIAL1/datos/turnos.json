@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan Perez",
+        "telefono": "3574000001",
+        "fecha": "2026-10-01",
+        "hora": "09:00",
+        "profesional": "Agustina"
+    },
+    {
+        "id": 2,
+        "nombre": "Maria Gomez",
+        "telefono": "3574000002",
+        "fecha": "2026-10-01",
+        "hora": "10:00",
+        "profesional": "Rocio"
+    },
+    {
+        "id": 3,
+        "nombre": "Lucas Rodriguez",
+        "telefono": "3574000003",
+        "fecha": "2026-10-02",
+        "hora": "11:00",
+        "profesional": "Agustina"
+    },
+    {
+        "id": 4,
+        "nombre": "Carolina Lopez",
+        "telefono": "3574000004",
+        "fecha": "2026-10-02",
+        "hora": "16:00",
+        "profesional": "Rocio"
+    }
+]
